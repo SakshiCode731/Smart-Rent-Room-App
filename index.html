@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Rent Room App</title>
+</head>
+<body>
+  <div class="container">
+    <h2>🏠 Smart Rent Room App</h2>
+
+    <label>Room Type</label>
+    <select id ="roomtype">
+      <option value="single">Single Room</option>
+      <option value="1bhk">1 BHK</option>
+      <option value="2bhk">2 BHK</option>
+      <option value="3bhk">3 BHK</option>
+      <option value="1bhk">5 BHK</option>
+    </select>
+
+    <label for="sqft">Room Size (sq ft)</label>
+    <input type="number" id="sqft" placeholder="Enter sq ft">
+
+    <label>Location</label>
+    <select id="location">
+      <option value="main">Main Road</option>
+      <option value="near">Near Highway</option>
+      <option value="far">Away from Road</option>
+    </select>
+
+<label>Privacy Level</label>
+<select id="privacy">
+  <option value="low">Low</option>
+  <option value="medium">Medium</option>
+  <option value="high">High</option>
+</select>
+
+   <button onclick="calculateRent()">Calculate Rent</button>
+   <h3 id="result"></h3>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
