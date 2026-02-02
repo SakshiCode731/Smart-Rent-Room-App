@@ -1,8 +1,7 @@
 body{
   font-family: Arial, sans-serif;
- background: 
-  rgba(21, 64, 165, 0.99),
-  rgba(177, 13, 13, 0.8);
+ background: #d2d2d2;
+ 
 
 }
 .container{
@@ -22,4 +21,15 @@ input,select,button{
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+button{
+  margin-top: 15px;
+  background: #6b5cff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+h3{
+  margin-top: 20px;
+  color: green;
 }
