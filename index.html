@@ -20,8 +20,11 @@
       <option value="1bhk">5 BHK</option>
     </select>
 
+    
+    <!-- <img id="roomimage" src="singleroom.jpg"> -->
+
     <label for="sqft">Room Size (sq ft)</label>
-    <input type="number" id="sqft" placeholder="Enter sq ft">
+    <input type="number" id="roomsize" placeholder="Enter sq ft">
 
     <label>Location</label>
     <select id="location">
@@ -36,6 +39,9 @@
   <option value="medium">Medium</option>
   <option value="high">High</option>
 </select>
+
+<label>Room Preview</label>
+      <img id="roomimage" src="singleroom.jpg">
 
    <button onclick="calculateRent()">Calculate Rent</button>
    <h3 id="result"></h3>

@@ -4,7 +4,7 @@ function calculateRent() {
   let location = document.getElementById("location").value;
   let privacy = document.getElementById("privacy").value;
 
-  if(roomsize ==="" || <=0){
+  if(roomsize ==="" || roomsize <=0){
     alert("Please enter a valid room size.");
     return;
   }
@@ -17,7 +17,7 @@ function calculateRent() {
   else if(roomtype === "2bhk") pricepersqft = 15;
   else if(roomtype === "3bhk") pricepersqft = 18;
   else if(roomtype === "4bhk") pricepersqft = 22;
-}
+
 
 let baseRent = roomsize * pricepersqft;
 
@@ -37,3 +37,4 @@ Base Rent: ₹${baseRent}<br>
 Location Charges: ₹${locationCharge}<br>
 Privacy Charges: ₹${privacyCharge}<br>
 <strong>Total Rent: ₹${totalRent}</strong>`;
+}

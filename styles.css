@@ -64,3 +64,9 @@ button:hover{
   font-size: 15px;
   line-height: 1.6;
 }
+#roomimage{
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+  display: none;
+}
