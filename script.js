@@ -29,3 +29,11 @@ else if (location === "far") locationCharge = 1000;
 let privacyCharge = 0;
 if (privacy === "high") privacyCharge = 2500;
 else if (privacy === "medium") privacyCharge = 1000;
+
+let totalRent = baseRent + locationCharge + privacyCharge;
+
+document.getElementById("result").innerHTML = `Area: ${roomsize} sqft<br>
+Base Rent: ₹${baseRent}<br>
+Location Charges: ₹${locationCharge}<br>
+Privacy Charges: ₹${privacyCharge}<br>
+<strong>Total Rent: ₹${totalRent}</strong>`;
