@@ -37,4 +37,16 @@ Base Rent: ₹${baseRent}<br>
 Location Charges: ₹${locationCharge}<br>
 Privacy Charges: ₹${privacyCharge}<br>
 <strong>Total Rent: ₹${totalRent}</strong>`;
+
+let img = document.getElementById("roomImage");
+
+img.style.display = "block"; // show image
+
+if (roomtype === "single") img.src = "singleroom.jpg";
+else if (roomtype === "1bhk") img.src = "1bhk.jpg";
+else if (roomtype === "2bhk") img.src = "2bhk.jpg";
+else if (roomtype === "3bhk") img.src = "3bhk.jpg";
+else if (roomtype === "4bhk") img.src = "4bhk.jpg";
+else if (roomtype === "5bhk") img.src = "5bhk.jpg";
+
 }
