@@ -1,3 +1,46 @@
+let rooms = [
+  {id:1,type:"Single",price:4000,location:"Near College",available:true},
+  {id:2,type:"1BHK",price:7000,location:"Main Road",available:true},
+  {id:3,type:"2BHK",price:10000,location:"City Center",available:true}
+];
+
+let saved = localStorage.getItem("rooms");
+if(saved){
+  rooms = JSON.parse(saved);
+}
+
+function showRooms(){
+  let output = "";
+
+  rooms.forEach(room=>{
+    output += `
+      <div class="room">
+        <h3>${room.type}</h3>
+        <p>₹${room.price}</p>
+        <p>${room.location}</p>
+        <button onclick="bookRoom(${room.id})">
+          ${room.available ? "Book Now" : "Not Available"}
+        </button>
+      </div>
+    `;
+  });
+
+  document.getElementById("rooms").innerHTML = output;
+}
+
+showRooms();
+
+function bookRoom(id){
+  let room = rooms.find(r=>r.id===id);
+  room.available = false;
+
+  localStorage.setItem("rooms",JSON.stringify(rooms));
+
+  alert("Room Booked!");
+  showRooms();
+}
+
+
 function calculateRent() {
   let roomtype = document.getElementById("roomtype").value;
   let roomsize = document.getElementById("roomsize").value;
