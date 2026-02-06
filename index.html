@@ -4,13 +4,16 @@
   <link rel="stylesheet" href="styles.css"> 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Rent Room App</title>
+  <title>StayNest- Room Rent</title>
 </head>
 <body>
-  <div class="container">
-    <h2>🏠 Room Rental Demo App</h2>
-    <div id="rooms"></div>
+    <header>
+        <h2>StayNest</h2>
+    <button class="book-btn">Book Now</button>
+    </header>
 
+    <div class="container">
+      <h2>Find Your Perfect Room</h2>
     <label>Room Type</label>
     <select id ="roomtype">
       <option value="single">Single Room</option>
@@ -39,6 +42,13 @@
   <option value="low">Low</option>
   <option value="medium">Medium</option>
   <option value="high">High</option>
+</select>
+
+<label>Amenities</label>
+<select id="amenities">
+  <option value="baisc">Basic</option>
+  <option value="furnished">Furnished</option>
+  <option value="luxury">Luxury</option>
 </select>
 
 <label>Room Preview</label>
