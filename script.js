@@ -1,5 +1,5 @@
 let rooms = [
-  {id:1,type:"Single",price:4000,location:"Near College",available:true},
+  {id:1,type:"Single",price:4000,location:"Near College",available:true,img:"singleroom.jpg"},
   {id:2,type:"1BHK",price:7000,location:"Main Road",available:true},
   {id:3,type:"2BHK",price:10000,location:"City Center",available:true}
 ];
