@@ -2,6 +2,7 @@ body{
   font-family: Arial, sans-serif;
   background: #f5f5f5;
   margin: 0;
+  height: 100vh;
  }
 
  header{
@@ -63,6 +64,7 @@ button{
   border-radius: 8px;
   font-size: 16px;
   color: white;
+  background-color: #258bf1;
   cursor: pointer;  
   font-weight: bold;
 }
@@ -76,6 +78,8 @@ button:hover{
   border-radius: 8px;
   font-size: 15px;
   line-height: 1.6;
+  background-color: #258bf1;
+  color: white;
 }
 #roomimage{
   width: 100%;
