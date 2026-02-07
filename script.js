@@ -25,7 +25,7 @@ function showRooms(){
     `;
   });
 
-  document.getElementById("rooms").innerHTML = output;
+  document.getElementById("rooms").innerHTML = result;
 }
 
 showRooms();

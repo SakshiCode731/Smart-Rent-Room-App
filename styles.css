@@ -44,6 +44,7 @@ input,select{
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 .preview{
   width: 100%;
