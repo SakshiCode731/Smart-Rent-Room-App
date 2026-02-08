@@ -85,7 +85,7 @@ let img = document.getElementById("roomImage");
 
 img.style.display = "block"; // show image
 
-if (roomtype === "single") img.src = "singleroom.jpg";
+if (roomtype === "single") img.src = "image12.jpg";
 else if (roomtype === "1bhk") img.src = "1bhk.jpg";
 else if (roomtype === "2bhk") img.src = "2bhk.jpg";
 else if (roomtype === "3bhk") img.src = "3bhk.jpg";
