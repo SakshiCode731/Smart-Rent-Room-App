@@ -14,21 +14,21 @@ function showRooms(){
 
   rooms.forEach(room=>{
     output += `
-      <div class="room">
+      <div class="room-card">
+        <img src="${room.img || 'singleroom.jpg'}">
         <h3>${room.type}</h3>
         <p>₹${room.price}</p>
         <p>${room.location}</p>
         <button onclick="bookRoom(${room.id})">
-          ${room.available ? "Book Now" : "Not Available"}
+          ${room.available ? "Book Now" : "Booked"}
         </button>
       </div>
     `;
   });
 
-  document.getElementById("rooms").innerHTML = result;
+  document.getElementById("rooms").innerHTML = output;
 }
 
-showRooms();
 
 function bookRoom(id){
   let room = rooms.find(r=>r.id===id);
