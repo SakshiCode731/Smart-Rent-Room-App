@@ -95,3 +95,9 @@ button:hover{
   margin:10px;
   border-radius:8px;
 }
+.room-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
