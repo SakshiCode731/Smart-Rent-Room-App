@@ -83,6 +83,8 @@ Privacy Charges: ₹${privacyCharge}<br>
 
 let img = document.getElementById("roomImage");
 
+
+}
 function updateRoomImage(){
   let roomtype = document.getElementById("roomtype").value;
   let img = document.getElementById("roomImage");
@@ -96,5 +98,4 @@ else if (roomtype === "3bhk") img.src = "3bhk.jpg";
 else if (roomtype === "4bhk") img.src = "4bhk.jpg";
 else if (roomtype === "5bhk") img.src = "5bhk.jpg";
 
-}
 }
