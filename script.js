@@ -99,3 +99,26 @@ else if (roomtype === "4bhk") img.src = "4bhk.jpg";
 else if (roomtype === "5bhk") img.src = "5bhk.jpg";
 
 }
+
+function login(){
+  let name = document.getElementById("username").value;
+
+  if(name===""){
+    alert("Enter name");
+    return;
+  }
+
+  localStorage.setItem("user",name);
+  document.getElementById("welcome").innerText =
+    "Welcome " + name;
+}
+
+window.onload = function(){
+  showRooms();
+
+  let savedUser = localStorage.getItem("user");
+  if(savedUser){
+    document.getElementById("welcome").innerText =
+      "Welcome " + savedUser;
+  }
+}
