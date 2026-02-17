@@ -12,15 +12,22 @@ if(saved){
 function showRooms(){
   let output = "";
 
-  rooms.forEach(room=>{
+    rooms.forEach(room=>{
+      if(!room.likes) room.likes = 0;
+   
     output += `
       <div class="room-card">
         <img src="${room.img || 'singleroom.jpg'}">
         <h3>${room.type}</h3>
         <p>₹${room.price}</p>
         <p>${room.location}</p>
+        
         <button onclick="bookRoom(${room.id})">
           ${room.available ? "Book Now" : "Booked"}
+        </button>
+
+        <button onclick="likeRoom(${room.id})">
+        ❤️ Like (${room.likes})
         </button>
       </div>
     `;
