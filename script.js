@@ -122,3 +122,12 @@ window.onload = function(){
       "Welcome " + savedUser;
   }
 }
+function showLogin(){
+  document.getElementById("loginBox").style.display="block";
+  document.getElementById("signupBox").style.display="none";
+}
+
+function showSignup(){
+  document.getElementById("loginBox").style.display="none";
+  document.getElementById("signupBox").style.display="block";
+}
