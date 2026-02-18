@@ -8,17 +8,31 @@
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="logo">StayNest</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Rooms</a></li>
+      <li><a href="#">Favorites</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
 
-<header>
+    <div class="nav-buttons">
+      <button class="showLogin()">Login</button>
+      <button class="showSignup()">Sign Up</button>
+    </div>
+  </nav>
+
+<!-- <header>
   <h2>StayNest</h2>
   <button class="book-btn">Book Now</button>
-</header>
+</header> -->
 
 <div class="container">
-  <div class="tabs">
+  <!-- <div class="tabs">
     <button onclick="showLogin()">Login</button>
     <button onclick="showSignup()">Sign Up</button>
-  </div>
+  </div> -->
 <div id="loginBox">
   <h2>Login</h2>
   <input id="loginEmail" placeholder="Email">
@@ -28,13 +42,14 @@
   
 <div id="signupBox" style="display: none;">
   <h2>Sign Up</h2>
-  <input id="signupName" placeholder="Full Name">
+  <input id="signupName" placeholder="Name">
   <input id="signupEmail" placeholder="Email">
   <input id="signupPass" type="password" placeholder="Password">
   <button onclick="signup()">Sign Up</button>
+
 </div>
-  <input type="text" id="admin" placeholder="add rooms">
-  <button onclick="addroom()">Add Room</button>
+  <!-- <input type="text" id="admin" placeholder="add rooms">
+  <button onclick="addroom()">Add Room</button> -->
 
 <h2>Available Rooms</h2>
 <div id="rooms" class="room-list"></div>
