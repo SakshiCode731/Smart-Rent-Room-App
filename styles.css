@@ -37,14 +37,14 @@ header h2{
 }
 
 /* Container */
-.container{
+/* .container{
   background:white;
   width:400px;
   margin:30px auto;
   padding:25px;
   border-radius:12px;
   box-shadow:0 5px 20px rgba(0,0,0,0.1);
-}
+} */
 
 /* Headings */
 .container h2{
@@ -68,7 +68,7 @@ input:focus, select:focus{
 
 /* Buttons */
 button{
-  width:80%;
+  /* width:80%; */
   
   padding:12px;
   border:none;
@@ -143,4 +143,29 @@ label{
     width:95%;
     padding:18px;
   }
+}
+.form-box{
+  width: 300px;
+  margin: 40px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.form-box input{
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.form-box button{
+  width: 95%;
+  padding: 12px;
+  background: linear-gradient(to right,#4facfe,#00f2fe);
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
 }
