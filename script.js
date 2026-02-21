@@ -106,29 +106,7 @@ else if (roomtype === "4bhk") img.src = "4bhk.jpg";
 else if (roomtype === "5bhk") img.src = "5bhk.jpg";
 
 }
-
-function login(){
-  let name = document.getElementById("username").value;
-
-  if(name===""){
-    alert("Enter name");
-    return;
-  }
-
-  localStorage.setItem("user",name);
-  document.getElementById("welcome").innerText =
-    "Welcome " + name;
-}
-
-window.onload = function(){
-  showRooms();
-
-  let savedUser = localStorage.getItem("user");
-  if(savedUser){
-    document.getElementById("welcome").innerText =
-      "Welcome " + savedUser;
-  }
-}
+// SHOW FORMS
 function showLogin(){
   document.getElementById("loginBox").style.display="block";
   document.getElementById("signupBox").style.display="none";
@@ -138,3 +116,84 @@ function showSignup(){
   document.getElementById("loginBox").style.display="none";
   document.getElementById("signupBox").style.display="block";
 }
+
+// SIGNUP
+function signup(){
+  let email = document.getElementById("signupEmail").value;
+  let pass = document.getElementById("signupPass").value;
+
+  if(email==="" || pass===""){
+    alert("Fill all details");
+    return;
+  }
+
+  localStorage.setItem("userEmail",email);
+  localStorage.setItem("userPass",pass);
+
+  alert("Signup successful! Now login");
+  showLogin();
+}
+
+// LOGIN
+function login(){
+  let email = document.getElementById("loginEmail").value;
+  let pass = document.getElementById("loginPass").value;
+
+  let savedEmail = localStorage.getItem("userEmail");
+  let savedPass = localStorage.getItem("userPass");
+
+  if(email===savedEmail && pass===savedPass){
+    alert("Login successful!");
+  }else{
+    alert("Wrong email or password");
+  }
+}
+
+// SHOW FORMS
+function showLogin(){
+  document.getElementById("loginBox").style.display="block";
+  document.getElementById("signupBox").style.display="none";
+}
+
+function showSignup(){
+  document.getElementById("loginBox").style.display="none";
+  document.getElementById("signupBox").style.display="block";
+}
+
+// SIGNUP
+function signup(){
+  let email = document.getElementById("signupEmail").value;
+  let pass = document.getElementById("signupPass").value;
+
+  if(email==="" || pass===""){
+    alert("Fill all details");
+    return;
+  }
+
+  localStorage.setItem("userEmail",email);
+  localStorage.setItem("userPass",pass);
+
+  alert("Signup successful! Now login");
+  showLogin();
+}
+
+// LOGIN
+function login(){
+  let email = document.getElementById("loginEmail").value;
+  let pass = document.getElementById("loginPass").value;
+
+  let savedEmail = localStorage.getItem("userEmail");
+  let savedPass = localStorage.getItem("userPass");
+
+  if(email===savedEmail && pass===savedPass){
+    alert("Login successful!");
+  }else{
+    alert("Wrong email or password");
+  }
+}
+
+
+
+
+
+
